@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="src/cascade.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-btn" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1 class="weather-city" id="city"></h1>
+            <p class="weather-details">
+              <span id="time">,</span>
+              <span id="weather-condition"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong> , Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-container">
+            <div id="icon"></div>
+            <div class="weather-temp" id="weather-temp"></div>
+            <div class="weather-unit">℃</div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/kelly9396" target="_blank">Kelly Visagie</a>
+        , is
+        <a href="https://github.com/kelly9396/Weer" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://weerapplication.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/javascript.js"></script>
+  </body>
+</html>
